@@ -1,13 +1,6 @@
-import addReducer from './addReducer';
-import deleteReducer from './deleteReducer';
-import { combineReducers } from 'redux';
+import initialState from './intialState';
 
-
-//const rootReducer = combineReducers({ deleteReducer});
-// const rootReducer = deleteReducer;
-// export default rootReducer
-
-const rootReducer = (state = initState, action) => {
+const rootReducer = (state = initialState, action) => {
     console.log(action);
     if(action.type === 'DELETE_POST'){
      let newPosts = state.posts.filter(post => {
