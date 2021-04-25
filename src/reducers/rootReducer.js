@@ -1,9 +1,8 @@
-import addReducer from './addReducer';
-import deleteReducer from './deleteReducer';
+import postReducer from './postReducer';
 import { combineReducers } from 'redux';
 
 
-const rootReducer = combineReducers({ deleteReducer,addReducer});
+const rootReducer = combineReducers({ postReducer});
 export default rootReducer
 
 

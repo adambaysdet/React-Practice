@@ -15,4 +15,9 @@ export const addPost = (id,title,body) => {
     }
   }
 }
+export const listPost = () => {
+  return {
+    type: 'LIST_POST',
+  }
+}
 
